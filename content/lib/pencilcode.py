@@ -14,17 +14,17 @@ myTurtle.speed(1.25)
 ## Move Commands ##
 ###################
 
-def __getStateAndHide()
+def __getStateAndHide():
     result = (myTurtle.isvisible(), myTurtle.pen(), myTurtle.pos(), myTurtle.heading())
     myTurtle.hideturtle()
     myTurtle.penup()
     myTurtle.speed(0)
     return result
 
-def __restoreStateAndShow(isvisible, penInfo, position, heading)
+def __restoreStateAndShow(isvisible, penInfo, position, heading):
     if (position != None):
         myTurtle.setpos(position)
-    if (position != None):
+    if (heading != None):
         myTurtle.setheading(heading)
     if (penInfo != None):
         myTurtle.pen(penInfo)
@@ -55,7 +55,7 @@ def speed(value):
     myTurtle.speed(value * 1.25)
 
 def home():
-    isVisible, penInfo,, = __getStateAndHide()
+    isVisible, penInfo, _, _ = __getStateAndHide()
     myTurtle.home()
     __restoreStateAndShow(isVisible, penInfo, None, 90)
 
@@ -69,7 +69,7 @@ def movexy(x, y):
     moveto(myTurtle.xcor() + x, myTurtle.ycor() + y)
 
 def jumpto(x, y):
-    isVisible, penInfo,, = __getStateAndHide()
+    isVisible, penInfo, _, _ = __getStateAndHide()
     __restoreStateAndShow(isVisible, penInfo, [x, y], None)
 
 def jumpxy(x, y):
@@ -100,7 +100,7 @@ def pd():
 def pen(color, size=None):
     myTurtle.pencolor(color)
     if (size != None):
-      myTurtle.pensize(size)
+        myTurtle.pensize(size)
     myTurtle.pendown()
 
 def dot(color, size):
@@ -123,7 +123,7 @@ def get_poly():
     return myTurtle.get_poly()
 
 def make_shape(name, polygon, fillcolor, outlineColor):
-    s = Shape(name)
+    s = turtle.Shape(name)
     s.addcomponent(polygon, fillcolor, outlineColor)
 
 def wear(name):
