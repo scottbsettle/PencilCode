@@ -4,9 +4,19 @@ How To Build and Test PencilCode
 First install the prerequisites: git, nodejs, and grunt. Next, be sure you're in your home directory. Then:
 
 <pre>
-git clone https://github.com/PencilCode/pencilcode.git
+git clone https://github.com/cacticouncil/pencilcode.git
 cd pencilcode
 npm install
+grunt
+grunt devserver
+</pre>
+
+On Windows Subsystem for Linux (WSL) *only*:
+
+<pre>
+git clone https://github.com/cacticouncil/pencilcode.git
+cd pencilcode
+npm install --no-shrinkwrap
 grunt
 grunt devserver
 </pre>
@@ -42,6 +52,14 @@ source ~/.bashrc
 npm install -g grunt-cli
 </pre>
 Zsh users should change `bashrc` to `zshrc` in the above code.
+
+(For Windows Subsystem for Linux:)
+
+<pre>
+sudo apt-get install npm git
+sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
+sudo npm install -g grunt-cli
+</pre>
 
 (For Mac:)
 
