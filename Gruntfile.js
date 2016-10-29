@@ -117,12 +117,15 @@ module.exports = function(grunt) {
           ]
         },
         options: {
-          preserveComments: false,
-          screwIE8: true,
-          report: 'min',
-          beautify: {
-            beautify: false
-          }
+          preserveComments: 'all',
+          mangle: false,
+          beautify: { beautify: true }
+//          preserveComments: false,
+//          screwIE8: true,
+//          report: 'min',
+//          beautify: {
+//            beautify: false
+//          }
         }
       }
     },
