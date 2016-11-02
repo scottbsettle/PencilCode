@@ -11,7 +11,7 @@ from cefpython3 import cefpython
 # open server
 
 
-os.system("sudo python pythonHTTPServer.py")
+os.system("python pythonHTTPServer.py")
 
 
 class CefWidget(QWidget):
