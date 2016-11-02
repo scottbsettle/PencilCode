@@ -1,17 +1,16 @@
 # browser using PySide from https://gist.github.com/mmolero/9d8326367c4657f73a3b6d565206a3e4
 
 import sys
-import os
 import ctypes
-
 from PySide.QtGui import *
 from PySide.QtCore import *
 from cefpython3 import cefpython
+import threading as th
+import pythonHTTPServer as serv
 
 # open server
 
-
-os.system("python pythonHTTPServer.py")
+serv.OpenServer()
 
 
 class CefWidget(QWidget):
@@ -54,7 +53,7 @@ class CefWidget(QWidget):
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
-        self.setGeometry(150, 150, 800, 800)
+        self.setGeometry(150, 150, 1024, 800)
 
         self.view = CefWidget(self)
 

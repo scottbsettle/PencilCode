@@ -14,3 +14,6 @@
 [1102/133325:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
 [1102/133330:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
 [1102/133335:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/142440:ERROR:audio_low_latency_output_win.cc(268)] Bailing out due to non-perfect timing.
+[1102/145310:ERROR:audio_low_latency_output_win.cc(268)] Bailing out due to non-perfect timing.
+[1102/150627:ERROR:audio_low_latency_output_win.cc(268)] Bailing out due to non-perfect timing.
