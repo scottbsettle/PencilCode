@@ -1,0 +1,16 @@
+[1102/113333:INFO:CONSOLE(8)] "Uncaught ReferenceError: jQuery is not defined", source: http://pencilcode.net/lib/jquery.autocomplete.min.js (8)
+[1102/113333:INFO:CONSOLE(170)] "Uncaught ReferenceError: $ is not defined", source: http://pencilcode.net/ (170)
+[1102/130501:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/130506:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/130512:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/130541:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/130546:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/130608:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/130613:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/133255:ERROR:audio_low_latency_output_win.cc(268)] Bailing out due to non-perfect timing.
+[1102/133310:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/133315:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/133320:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/133325:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/133330:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[1102/133335:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
